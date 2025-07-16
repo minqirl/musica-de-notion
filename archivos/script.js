@@ -15,26 +15,26 @@ $(function () {
   const playPreviousTrackButton = $("#play-previous");
   const playNextTrackButton = $("#play-next");
   const albums = [
-    "Me & You",
-    "Dawn",
-    "Electro Boy",
-    "Home",
-    "Proxy (Original Mix)"
+    "☆ 灰色のカラス",
+    "☆ Journey Mercies",
+    "☆ Watching T.V.",
+    "☆ 처음처럼",
+    "☆ Magic Clock"
   ];
   const trackNames = [
-    "Alex Skrindo - Me & You",
-    "Skylike - Dawn",
-    "Kaaze - Electro Boy",
-    "Jordan Schor - Home",
-    "Martin Garrix - Proxy"
+    "Eri Nishida - Eri´s Collection",
+    "Mark - The Firstfruit",
+    "Magdalena Bay - Imaginal Disk",
+    "T-ARA - Absolute First Album",
+    "F5ve - Magic Clock"
   ];
   const albumArtworks = ["_1", "_2", "_3", "_4", "_5"];
   const trackUrl = [
-    "https://singhimalaya.github.io/Codepen/assets/music/1.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/2.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/3.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/4.mp3",
-    "https://singhimalaya.github.io/Codepen/assets/music/5.mp3"
+    "https://minqirl.github.io/musica-de-notion/Eri%20Nishida%20-%20%E7%81%B0%E8%89%B2%E3%81%AE%E3%82%AB%E3%83%A9%E3%82%B9%20a%20gray%20crow.mp3",
+    "https://minqirl.github.io/musica-de-notion/MARK%20-%20Journey%20Mercies.mp3",
+    "https://minqirl.github.io/musica-de-notion/Magdalena%20Bay%20-%20Watching%20T.V.%20(1).mp3",
+    "https://minqirl.github.io/musica-de-notion/T-ara%20-%20%EC%B2%98%EC%9D%8C%EC%B2%98%EB%9F%BC.mp3",
+    "https://minqirl.github.io/musica-de-notion/F5ve%20-%20Magic%20Clock.mp3"
   ];
 
   let bgArtworkUrl,
