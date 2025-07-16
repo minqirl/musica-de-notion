@@ -1,16 +1,13 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
   margin: 0;
-  background-color: #f1f9f9;
+  background-color: #C2F0C2;
 }
 *:focus {
   outline: none;
@@ -18,7 +15,7 @@ body {
 
 body {
   margin: 0;
-  background-color: #ffeff5;
+  background-color:transparent;
 }
 
 #player-container {
@@ -31,28 +28,13 @@ body {
   margin: -4px auto;
 }
 
-#player-bg-artwork {
-  position: fixed;
-  top: -30px;
-  right: -30px;
-  bottom: -30px;
-  left: -30px;
-  background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  filter: blur(40px);
-  -webkit-filter: blur(40px);
-  z-index: 1;
-}
-
 #player-bg-layer {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #FFFFF;
   opacity: 0.5;
   z-index: 2;
 }
@@ -69,7 +51,7 @@ body {
   right: 15px;
   left: 15px;
   padding: 13px 22px 10px 184px;
-  background-color: #fff7f7;
+  background-color: #FFF0CC;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1;
@@ -80,13 +62,13 @@ body {
 }
 
 #album-name {
-  color: #54576f;
+  color: #B3C9F7;
   font-size: 17px;
   font-weight: bold;
 }
 
 #track-name {
-  color: #acaebd;
+  color: #FF66B2;
   font-size: 13px;
   margin: 2px 0 13px 0;
 }
@@ -109,14 +91,14 @@ body {
 #track-length {
   color: transparent;
   font-size: 11px;
-  background-color: #ffe8ee;
+  background-color: #C2F0C2;
   border-radius: 10px;
   transition: 0.3s ease all;
 }
 
 #track-time.active #current-time,
 #track-time.active #track-length {
-  color: #f86d92;
+  color: #B3C9F7;
   background-color: transparent;
 }
 
@@ -128,7 +110,7 @@ body {
 }
 
 #seek-bar-container {
-  background-color: #ffe8ee;
+  background-color: #FFCCE5;
   cursor: pointer;
 }
 
@@ -154,7 +136,7 @@ body {
 
 #seek-time,
 #s-hover {
-  background-color: #3b3d50;
+  background-color: #FFCCE5;
 }
 
 #seek-bar {
@@ -164,7 +146,7 @@ body {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #fd6d94;
+  background-color: #FFCCE5;
   transition: 0.2s ease width;
   z-index: 1;
 }
@@ -172,8 +154,8 @@ body {
 #player-content {
   position: relative;
   height: 100%;
-  background-color: #fff;
-  box-shadow: 0 30px 80px #656565;
+  background-color:#FFDCE2;
+  box-shadow: 0 30px 80px #FFCCE5;
   border-radius: 15px;
   z-index: 2;
 }
@@ -229,17 +211,7 @@ body {
 
 #album-art.active img.active {
   z-index: 1;
-  -webkit-animation: rotateAlbumArt 3s linear 0s infinite forwards;
-          animation: rotateAlbumArt 3s linear 0s infinite forwards;
-}
-
-@-webkit-keyframes rotateAlbumArt {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
 }
 
 @keyframes rotateAlbumArt {
@@ -257,7 +229,7 @@ body {
   right: 0;
   left: 0;
   height: 13px;
-  color: #1f1f1f;
+  color: #FFCCE5;
   font-size: 13px;
   font-family: Helvetica;
   text-align: center;
@@ -307,14 +279,14 @@ body {
   width: 26px;
   height: 26px;
   padding: 25px;
-  background-color: #fff;
+  background-color: #FFDCE2;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .button i {
   display: block;
-  color: #d6dee7;
+  color: #B3C9F7;
   font-size: 26px;
   text-align: center;
   line-height: 1;
